@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "950902869203",
+    "project_id": "doctor-buddy-6403a",
+    "storage_bucket": "doctor-buddy-6403a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950902869203:android:2c32d78b1b9e17c6bb1826",
+        "android_client_info": {
+          "package_name": "com.tatvaalife.doctorbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950902869203-en90ntfvt55rvvf4taa0ro1jnq55idfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tatvaalife.doctorbuddy",
+            "certificate_hash": "04d1fcf2b61a967ee5895c8465294f85b49ce56b"
+          }
+        },
+        {
+          "client_id": "950902869203-nua4e5a05chtolnv28goc8hnc2c6sda4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAOyD3a95isU3zMBk-6lWsk61FbnPxH-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950902869203-nua4e5a05chtolnv28goc8hnc2c6sda4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

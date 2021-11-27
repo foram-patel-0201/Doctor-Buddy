@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        />
+    <item
+        android:id="@+id/userGuide"
+        android:title="User Guide"
+        />
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy"
+        />
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        />
+
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        />
+
+    <item
+        android:id="@+id/contactUs"
+        android:title="Contact Us"
+        />
+
+
+
+
+</menu>
