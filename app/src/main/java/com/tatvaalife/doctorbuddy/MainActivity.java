@@ -5,13 +5,17 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
     CardView dr1;
+
+    int REQUEST_CALL = 2;
+    String num;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,18 +122,25 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.contactUs:
 
+                Dialog dialog = new Dialog(MainActivity.this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.dialog_contacct);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
 
                 break;
 
             case R.id.help:
 
+                Dialog dialog1 = new Dialog(MainActivity.this);
+                dialog1.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog1.setContentView(R.layout.dialog_about);
+                dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog1.show();
 
                 break;
 
-            case R.id.userGuide:
 
-
-                break;
 
             case R.id.privacy:
 
@@ -179,6 +193,24 @@ public class MainActivity extends AppCompatActivity {
                 });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    public void callAmbulance(View view) {
+
+            num = "+918104178238";
+            makePhoneCall(num);
+
+    }
+
+    private void makePhoneCall(String number) {
+        if (ContextCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL);
+        } else {
+            String dial = "tel:" + number;
+            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+        }
     }
 
 }

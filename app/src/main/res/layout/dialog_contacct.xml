@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Contact Details"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+
+
+        <View
+            android:background="#040404"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.04dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Email id:"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#119499"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tatvaalife@gmail.com"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#119499" />
+        <View
+            android:background="#119499"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.04dp"/>
+
+
+
+
+        <View
+            android:background="#040404"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.04dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+       android:src="@mipmap/ic_launcher"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>

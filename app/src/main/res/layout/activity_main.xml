@@ -27,6 +27,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sae"
+                android:layout_height="200dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,8 +264,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="In the case of emergency press this button to call amblulance"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:text="call Ambulance"
+                android:onClick="callAmbulance"/>
 
         </LinearLayout>
+
+
 
     </LinearLayout>
 
