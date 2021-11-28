@@ -54,6 +54,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/dr1"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -74,16 +75,18 @@
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_gravity="center"
-                                android:layout_margin="10dp" />
+                                android:layout_margin="10dp"
+                                android:src="@drawable/dr"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center_horizontal"
                                 android:layout_marginBottom="10dp"
-                                android:text="Dr. Harshil Vasoya"
+                                android:text="Dr. Vasoya"
                                 android:textSize="20sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -121,14 +124,15 @@
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_gravity="center"
-                                android:layout_margin="10dp" />
+                                android:layout_margin="10dp"
+                                android:src="@drawable/dr" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center_horizontal"
                                 android:layout_marginBottom="10dp"
-                                android:text="Dr. Harshil Vasoya"
+                                android:text="Some More"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
@@ -137,54 +141,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center_horizontal"
                                 android:layout_marginBottom="10dp"
-                                android:text="MBBS"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp"
-                        app:cardMaxElevation="12dp"
-                        app:cardPreventCornerOverlap="true"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_gravity="center"
-                                android:layout_margin="10dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:layout_marginBottom="10dp"
-                                android:text="Dr. Harshil Vasoya"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:layout_marginBottom="10dp"
-                                android:text="MBBS"
+                                android:text="Examples"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
@@ -215,14 +172,15 @@
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_gravity="center"
-                                android:layout_margin="10dp" />
+                                android:layout_margin="10dp"
+                                android:src="@drawable/dr" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center_horizontal"
                                 android:layout_marginBottom="10dp"
-                                android:text="Dr. Harshil Vasoya"
+                                android:text="Some More"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
@@ -231,7 +189,55 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center_horizontal"
                                 android:layout_marginBottom="10dp"
-                                android:text="MBBS"
+                                android:text="Examples"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/dr"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:text="Some More"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:text="Examples"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
